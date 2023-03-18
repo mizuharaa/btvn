@@ -40,4 +40,6 @@ for n in range(SoNguoi):
         print(f'Ngay sinh la: {nd}')
         cccd1 = random.choice(list_id)
         print(f"CCCD: {cccd1}")
-    
+    else:
+        print('Vui long nhap dung cu phap!')
+        
