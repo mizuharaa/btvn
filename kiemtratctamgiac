@@ -1,0 +1,11 @@
+a, b, c = 10, 7, 8
+is_triang = a + b > c and b + c > a and a + c > b
+print(f'a, b, c la 3 canh cua tam giac: {is_triang}')
+is_isosceles = a == b or b == c or a == c
+print(f'a, b, c la 3 canh cua tam giac can: {is_isosceles}')
+is_equilateral = a == b == c
+print(f'a, b, c la 3 canh cua tam giac deu: {is_equilateral}')
+is_right = a**2 + b**2 == c**2 or b**2 + c**2 == a**2 or a**2 + c**2 == b**2
+print(f'a, b, c la 3 canh cua tam giac can: {is_right}')
+is_isosceles_right = a == b or a == c or b == c and a**2 + b**2 == c**2 or b**2 + c**2 == a**2 or a**2 + c**2 == b**2
+print(f'a, b , c la 3 canh cua tam giac vuong can: {is_isosceles_right}')
