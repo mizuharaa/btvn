@@ -1,0 +1,1 @@
+print("Ho va ten: Tran Nguyen Khang Daniel \n Ngay sinh: 09/08/2007 \n Gioi tinh: Nam \n Truong hoc: LSTS \n Noi song: TPHCM \n Cong viec: Hoc sinh \n So thich: Doc sach, coding, tennis, piano")
