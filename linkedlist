@@ -1,0 +1,34 @@
+class Node():
+    def __init__(self, data):
+        self.data = data
+        self.ref = None
+        
+class LinkedList():
+    def __init__(self):
+        self.curr_node: Node = None
+        self.last_node: Node = None
+    
+    def print_ll(self):
+        if self.curr_node is None:
+            print('Linked list is currently empty')
+        else:
+            node = self.curr_node
+            while node is not None:
+                print(node.data)
+                node = node.ref
+                
+    def addNode(self, value):
+        if self.last_node == None:
+            self.curr_node = Node(value)
+            self.last_node = self.curr_node
+        else:
+            temp_node = Node(value)
+            self.last_node.ref = temp_node
+            self.last_node = temp_node
+            
+
+if __name__ == "__main__":
+    ll: LinkedList = LinkedList()
+    ll.addNode(6)
+    ll.addNode(9)
+    ll.print_ll()
