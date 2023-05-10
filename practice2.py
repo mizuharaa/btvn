@@ -1,5 +1,5 @@
 import math as m
-''' #Data_input.py
+#Data_input.py
 def integer() -> int:
     num = int(input('int: '))
     return num
@@ -17,11 +17,11 @@ def input_list() -> list:
 #Test
 print(integer())
 print(floatnum())
-print(input_list()) '''
+print(input_list())
 
 #HinhHoc.py
 
-''' exist = None
+exist = None
 def check_triangle(a, b, c):
     global exist
     exist = True if a + b > c and a + c > b and b + c > a else False if a == 0 or b == 0 or c == 0 else False
@@ -41,9 +41,9 @@ def type_triangle(a , b, c):
 def area(a, b ,c):
     p = (a+b+c)/2
     return (p*(p-a)*(p-b)*(p-c))**0.5
- '''
+
 #Kiemtra.py
-''' def email() -> bool:
+def email() -> bool:
     mail = input('Enter: ')
     listmail = ['@yahoo', '@gmail', '@lsts', '@inbox', '@outlook', '@office', '@yandex',] #v.v...
     check = mail.split('@')
@@ -61,7 +61,7 @@ def check_phone():
         return False
     return True if len(str(phone)) == 10 else False
 print(check_phone())
- '''
+
 def check_prime():
     n = int(input('Num: '))
     if n < 2:
@@ -71,4 +71,3 @@ def check_prime():
             return 'Not a prime'
     return 'Prime'
 print(check_prime())
-    
